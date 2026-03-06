@@ -1,6 +1,39 @@
-body{
-  background-color: #eef2ff;
+
+body {
   margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  background: linear-gradient(120deg, #0d0d1a, #1a1a2e, #0d0d1a, #2e1a3a);
+  background-size: 300% 300%;
+
+  animation: gradientShift 15s ease infinite;
+  color: white;
+}
+
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* optional: subtle animated overlay dots (techy effect) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  animation: moveDots 60s linear infinite;
+}
+
+@keyframes moveDots {
+  0% { background-position: 0 0; }
+  100% { background-position: 400px 400px; }
 }
 
 
@@ -62,14 +95,4 @@ body{
   font-size: 15px;
 }
 
-@media (max-width: 500px) {
-  .skills-list {
-    gap: 8px;      /* smaller gap for mobile */
-    max-width: 95%; /* fit almost full screen */
-  }
-  
-  .technical-skills {
-    font-size: 14px; /* smaller skill tags on mobile */
-    padding: 5px 8px;
-  }
-}
+
