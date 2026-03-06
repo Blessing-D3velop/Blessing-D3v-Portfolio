@@ -5,6 +5,7 @@
   row-gap: 20px;
   column-gap: 25px;
   padding:1px 25px;
+  margin-bottom:40px ;
 }
 a{
   text-decoration: none;
@@ -154,5 +155,11 @@ a{
     font-size: 14px;
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px){
+  .Projects{
+    margin-bottom: 80px;
   }
 }
