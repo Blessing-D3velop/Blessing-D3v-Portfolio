@@ -1,0 +1,158 @@
+.Projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* auto responsive */
+  gap: 20px; 
+  row-gap: 20px;
+  column-gap: 25px;
+  padding:1px 25px;
+}
+a{
+  text-decoration: none;
+}
+
+.Project-container{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;  
+
+}
+    .Project-container:hover{
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+.projectName{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: -5px;
+
+}
+
+.Project-number{
+  position: absolute;
+  top:29px;
+  right: 10px;
+  color: white;
+  background-color: rgb(30, 30, 39);
+  padding:5px 8px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.keyFeatures,
+.Technologies-used{
+  font-family: Arial;
+  font-size: 13px;
+  color:#364153 ;
+  font-weight: bold;
+}
+.Technologies-used{
+  margin-top: -4px;
+}
+.list{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+}.features-list{
+  margin-top: -17px;
+  padding-top: 10px;
+  color: lightslategray;
+  
+}
+
+.tech{
+  background-color: #ced4e6;
+  color:#364153 ;
+  font-size: 13px;
+  margin-right: 5px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.line{
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.github-livecode-container{
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects-buttons{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  margin-top: -3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  transform: transform 0.2s, box-shadow 0.2s ;
+}  
+ .projects-buttons:hover{
+      transform:  translateY(-3px);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.35);
+    }
+
+.project-button-image{
+  width: 20px;
+}
+
+.livecode-btn{
+  background-color: rgb(71, 71, 197);
+}
+.github-code{
+  background-color: rgb(40, 40, 56);
+}
+
+
+@media (min-width: 1300px) {
+  .Projects {
+    padding: 0px 275px;
+  }
+
+  .Project-container {
+    max-width: 700px;
+  }
+}
+
+/* Extra small screens (<500px): text & buttons scale down */
+@media (max-width: 500px) {
+  .projectName {
+    font-size: 18px;
+  }
+
+  .Project-number {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .keyFeatures,
+  .Tehnologies-used {
+    font-size: 12px;
+  }
+
+  .projects-buttons {
+    padding: 8px 15px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,75 @@
+body{
+  background-color: #eef2ff;
+  margin: 0;
+}
+
+
+.skills{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.headers{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* container for skills */
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* skill list */
+.skills-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+}
+
+.technical-skills{
+  background-color: rgb(30, 30, 39);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 13px;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: bold;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}   .technical-skills:hover{
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.45);
+
+    }
+
+.featured-projects{
+  text-align: center;
+  padding: 60px 130px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.paragraph-text{
+  color:#364153 ;
+  line-height: 1.6;
+  font-family: arial;
+  margin-bottom: -1px;
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+  .skills-list {
+    gap: 8px;      /* smaller gap for mobile */
+    max-width: 95%; /* fit almost full screen */
+  }
+  
+  .technical-skills {
+    font-size: 14px; /* smaller skill tags on mobile */
+    padding: 5px 8px;
+  }
+}
