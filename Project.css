@@ -30,12 +30,13 @@ a{
   font-weight: bold;
   font-size: 22px;
   margin-bottom: -5px;
+  z-index: 1;
 
 }
 
 .Project-number{
   position: absolute;
-  top:29px;
+  top:34px;
   right: 10px;
   color: white;
   background-color: rgb(30, 30, 39);
@@ -165,4 +166,13 @@ a{
   .Projects{
     margin-bottom: 80px;
   }
+}
+.Project-container {
+  padding-top: -30px; /* add a little space so projectName isn’t hidden behind the number */
+  color: #111827; /* ensures the text is visible */
+}
+
+.projectName {
+  z-index: 1; /* make sure it appears above other elements */
+  position: relative;
 }
