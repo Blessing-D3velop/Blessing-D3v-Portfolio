@@ -4,7 +4,7 @@ Blessing D3v Portfolio
 
 Features
 
--Showcase of 2 live front-end projects
+-Showcase of 6 live front-end projects
 
 -Technical skills section with highlighted competencies
 
